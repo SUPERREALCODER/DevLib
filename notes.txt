@@ -1,0 +1,8 @@
+1.HTML- hyper text transfer protocol
+2.6 heading element 
+3.self closing tag are void element 
+4.a)1px = 1/96th inch =.26 mm b)1pt -1/72nd inch =0.35 mm c)1em =100% of parent d)1 rem -100% of root e)named = xx large
+5.font.google.com
+6.box model - <div></div> border 100 px soid black; padding: ;margin: 
+7.Cascade - type-external ,internal ,inline (most importance) ___cascading style sheet <link rel="stylesheet" href="./styles.css"/>
+8.Selector - selector,slector{ color: blueviolet ;}
