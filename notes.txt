@@ -5,4 +5,6 @@
 5.font.google.com
 6.box model - <div></div> border 100 px soid black; padding: ;margin: 
 7.Cascade - type-external ,internal ,inline (most importance) ___cascading style sheet <link rel="stylesheet" href="./styles.css"/>
-8.Selector - selector,slector{ color: blueviolet ;}
+8.Selector - selector,slector{ color: blueviolet ;} (grouping selector)  b)applying direct child selector>selector{color: firebrick ;} c)descendant=apply a descendent of left side selector selector{  } d)chaining apply where slectors are true selectorselector{}  probably the codes and notes exist in a folder (1.1 combining selector)
+positioning a)static-s not positioned in any special way; it is always positioned according to the normal flow of the page: b) absolute-position relative to nearest positioed ancestor or top  c)fixed-top left corner of browser d)positioned realtive to its normal position 
+display: 
