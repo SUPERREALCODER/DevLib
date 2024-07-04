@@ -1,3 +1,4 @@
+https://github.com/orgs/appbrewery/repositories - in this could be found almost every teaching material from where we are taught from .
 1.HTML- hyper text transfer protocol
 2.6 heading element 
 3.self closing tag are void element 
@@ -5,4 +6,10 @@
 5.font.google.com
 6.box model - <div></div> border 100 px soid black; padding: ;margin: 
 7.Cascade - type-external ,internal ,inline (most importance) ___cascading style sheet <link rel="stylesheet" href="./styles.css"/>
-8.Selector - selector,slector{ color: blueviolet ;}
+8.Selector - selector,slector{ color: blueviolet ;} (grouping selector)  b)applying direct child selector>selector{color: firebrick ;} c)descendant=apply a descendent of left side selector selector{  } d)chaining apply where slectors are true selectorselector{}  probably the codes and notes exist in a folder (1.1 combining selector)
+9.positioning a)static-s not positioned in any special way; it is always positioned according to the normal flow of the page: b) absolute-position relative to nearest positioed ancestor or top but changes when you scroll down  c)fixed-top left corner of browser the element always remains fixed to the browser window irrespective of whether you scroll down  d)positioned realtive to its normal position  see the visualization at https://appbrewery.github.io/css-positioning/
+10.display: https://www.w3schools.com/cssref/pr_class_display.php this gives everything and https://appbrewery.github.io/css-display/
+11.float property left right and clear property left right and both clearing the float
+12.media(max-width:600px)means till 600 px
+13.Object in javascript var bellboy{ name="master main", age="19",hasWorkPermit:true ,language:["french","english"]}
+14.Jquery $("h1").animate({opacity:0.5},$("h1")).toggle();
