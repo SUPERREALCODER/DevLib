@@ -13,3 +13,4 @@ https://github.com/orgs/appbrewery/repositories - in this could be found almost 
 12.media(max-width:600px)means till 600 px
 13.Object in javascript var bellboy{ name="master main", age="19",hasWorkPermit:true ,language:["french","english"]}
 14.Jquery $("h1").animate({opacity:0.5},$("h1")).toggle();
+15.E: to navigate to E drive
