@@ -1,0 +1,99 @@
+//{ Driver Code Starts
+import java.io.*;
+import java.util.*;
+
+class GFG {
+    public static void main(String args[]) throws IOException {
+        Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+
+        while (t > 0) {
+            int rows = sc.nextInt();
+            int columns = sc.nextInt();
+
+            int matrix[][] = new int[rows][columns];
+
+            for (int i = 0; i < rows; i++) {
+                for (int j = 0; j < columns; j++) {
+                    matrix[i][j] = sc.nextInt();
+                }
+            }
+            int target = sc.nextInt();
+
+            Solution x = new Solution();
+
+            if (x.searchMatrix(matrix, target))
+                System.out.println("true");
+            else
+                System.out.println("false");
+            t--;
+
+            System.out.println("~");
+        }
+    }
+}
+// } Driver Code Ends
+
+
+
+
+class Solution {
+    // Function to search a given number in row-column sorted matrix.
+    public boolean searchMatrix(int[][] mat, int x) {
+        // code here
+        int rows =  mat.length;
+        int col = mat[0].length;
+        int i,j=0;
+        int copy=0;
+        
+      int low = 0;
+        int high = rows-1;
+        
+        //kind a binary search for columns to get the row
+       
+        while (low <= high) {
+            i = low + (high - low) / 2;
+
+            if (mat[i][col-1]==x) {
+                copy =i;
+                j=1;
+               break;
+               // Target in the row 
+            } else if (mat[i][col-1] < x) {
+              
+                low = i + 1; // Search down
+            } else {
+                copy = i;
+                high = i - 1; // Search up
+            }
+        }
+        i = copy;
+       if(j==1)
+       {
+           return true;
+       }
+        else{
+               low = 0;
+         high = col-1;
+       
+       //binary search for rows to get the number 
+        while (low <= high) {
+            int mid = low + (high - low) / 2;
+
+            if (mat[i][mid]==x) {
+               
+                return true;
+               // Target found
+            } else if (mat[i][mid] < x) {
+               
+                low = mid + 1; 
+            } else {
+                
+                high = mid - 1; 
+            }
+        }
+        return false ;
+        }
+   
+    }
+}
