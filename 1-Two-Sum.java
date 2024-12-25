@@ -1,5 +1,5 @@
 class Solution {
-    public int[] twoSum(int[] nums, int target) {
+    static public int[] twoSum(int[] nums, int target) {
         int[] m = new int[2];
         int i,j;
         for(i=0;i<nums.length;i++)
@@ -19,6 +19,7 @@ class Solution {
         return m;
         
     }
+  
 
  
 }

@@ -1,5 +1,5 @@
 class Solution {
-    public boolean isPalindrome(int x) {
+    static public boolean isPalindrome(int x) {
         int i=x;
         int d,r=0;
         while(i!=0)
@@ -18,5 +18,8 @@ class Solution {
         else 
         return false;
         
+    }
+    public static void main(String[]args){
+      System.err.println(isPalindrome(121));
     }
 }
