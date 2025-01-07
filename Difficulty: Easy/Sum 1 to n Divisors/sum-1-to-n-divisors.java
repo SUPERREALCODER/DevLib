@@ -25,10 +25,12 @@ class Solution {
         // code here
         int F=0,c=1;
         for(int i=2;i<=n;i++){
-            F=i+1;
-            for(int j=2;j<=i/2;j++){
+            
+            for(int j=1;j*j<=i;j++){
                 if(i%j == 0){
                     F=F+j;
+                    if(i/j != j)
+                    F=F+(i/j);
                 }
             }
             c=c+F;
